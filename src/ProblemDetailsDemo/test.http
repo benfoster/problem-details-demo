@@ -1,0 +1,52 @@
+POST https://localhost:5001/problems/generic-problem HTTP/1.1
+
+###
+
+POST https://localhost:5001/problems/implicit-validation HTTP/1.1
+content-type: application/json
+
+{
+    # "full_name": "Foo"
+}
+
+###
+
+POST https://localhost:5001/problems/validation-problem HTTP/1.1
+content-type: application/json
+
+{
+
+}
+
+###
+
+POST https://localhost:5001/problems/validation-problem-extended HTTP/1.1
+content-type: application/json
+
+{
+
+}
+
+# Add Hellang.Middleware.ProblemDetails
+# Ref: https://github.com/khellang/Middleware
+
+###
+
+POST https://localhost:5001/problems/exception HTTP/1.1
+
+
+### 
+
+POST https://localhost:5001/problems/notfound HTTP/1.1
+
+###
+
+GET https://localhost:5001/problems/validation-problem HTTP/1.1
+
+###
+
+POST https://localhost:5001/problems/custom-exception HTTP/1.1
+
+# Extensions
+
+
